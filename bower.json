@@ -1,5 +1,6 @@
 {
   "name": "jsfontscale",
+  "version": "0.0.1",
   "homepage": "https://github.com/onkeloki/jsfontscale",
   "authors": [
     "Marko Luft <me@markoluft.de>"
@@ -18,5 +19,4 @@
     "jquery": "~3"
   },
   "license": "MIT"
-
 }
