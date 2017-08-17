@@ -1,6 +1,9 @@
 html
 	head
-		script(type="text/javascript", src="../dist/jsfontsize.js")
+		script(type="text/javascript", src="../dist/jsfontscale.js")
+		script.
+			jsfs = new jsfontscale()
+
 	body
 		for size in ["0.3","0.5","1","2","3","5.5"]
 			h1(style="font-size:" + size + "em") font-size: #{size} em
