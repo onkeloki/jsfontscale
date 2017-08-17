@@ -2,13 +2,21 @@
 var jsfontscale;
 
 jsfontscale = (function() {
-  function jsfontscale(minWidth, maxWidth) {
-    this.minWidth = minWidth;
-    this.maxWidth = maxWidth;
-    alert("XA");
+  function jsfontscale(windowSizeAtDefaultScale, maxScale, minScale) {
+    this.windowSizeAtDefaultScale = windowSizeAtDefaultScale != null ? windowSizeAtDefaultScale : 1000;
+    this.maxScale = maxScale != null ? maxScale : 140;
+    this.minScale = minScale != null ? minScale : 40;
+    $(window).on("resize", this.run.bind(this));
+    this.run();
   }
 
-  jsfontscale.prototype.run = function() {};
+  jsfontscale.prototype.run = function() {
+    var scale;
+    scale = Math.round(($(window).width() / this.windowSizeAtDefaultScale) * 100);
+    scale = Math.max(scale, this.minScale);
+    scale = Math.min(scale, this.maxScale);
+    return $("body").css("font-size", scale + "%");
+  };
 
   return jsfontscale;
 
