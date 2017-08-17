@@ -5,7 +5,7 @@
     "Marko Luft <me@markoluft.de>"
   ],
   "description": "library to scale whole website using EM sizes",
-  "main": "jsfontscale.js",
+  "main": "dist/jsfontscale.js",
   "keywords": [
     "jsfontscale",
     "js-font-scale",
@@ -14,6 +14,9 @@
     "fontscale",
     "responsive"
   ],
-  "license": "MIT",
-  "private": true
+  "dependencies": {
+    "jquery": "~3"
+  },
+  "license": "MIT"
+
 }
