@@ -1,0 +1,19 @@
+{
+  "name": "jsfontscale",
+  "homepage": "https://github.com/onkeloki/jsfontscale",
+  "authors": [
+    "Marko Luft <me@markoluft.de>"
+  ],
+  "description": "library to scale whole website using EM sizes",
+  "main": "jsfontscale.js",
+  "keywords": [
+    "jsfontscale",
+    "js-font-scale",
+    "scale",
+    "font",
+    "fontscale",
+    "responsive"
+  ],
+  "license": "MIT",
+  "private": true
+}
